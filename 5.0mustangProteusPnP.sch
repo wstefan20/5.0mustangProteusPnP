@@ -418,9 +418,9 @@ GND
 Text Label 7250 1700 0    50   ~ 0
 GND
 Text Label 7250 2000 0    50   ~ 0
-12V
+12V_MR
 Text Label 7250 2100 0    50   ~ 0
-12V
+12V_MR
 Text Label 7250 2200 0    50   ~ 0
 AV1
 Text Label 7250 2300 0    50   ~ 0
@@ -786,10 +786,6 @@ Wire Wire Line
 	1200 3500 1800 3500
 Text Label 6950 3000 0    50   ~ 0
 5V_SENSE_1
-Wire Wire Line
-	1800 1000 1350 1000
-Text Label 1550 1000 0    50   ~ 0
-12V
 $Comp
 L power:GND #PWR0102
 U 1 1 5FFE1471
@@ -1009,4 +1005,5 @@ Wire Notes Line
 	3000 7250 700  7250
 Wire Notes Line
 	700  7250 700  550 
+NoConn ~ 1800 1000
 $EndSCHEMATC

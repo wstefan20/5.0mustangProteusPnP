@@ -981,4 +981,32 @@ Text Label 1500 1400 0    50   ~ 0
 AV3
 Text Label 1500 2300 0    50   ~ 0
 LS10
+Wire Notes Line
+	3700 750  3700 4650
+Wire Notes Line
+	10400 4650 10400 750 
+Wire Notes Line
+	10400 750  3700 750 
+Text Notes 4000 1000 0    50   ~ 0
+Proteus Connectors
+Text Notes 1250 750  0    50   ~ 0
+Stock Ford 60 pin EEC-IV connector
+Text Notes 5200 4800 0    50   ~ 0
+Extra Pins
+Wire Notes Line
+	7500 4650 7500 6650
+Wire Notes Line
+	7500 6650 3450 6650
+Wire Notes Line
+	3450 6650 3450 4650
+Wire Notes Line
+	3450 4650 10400 4650
+Wire Notes Line
+	700  550  3000 550 
+Wire Notes Line
+	3000 550  3000 7250
+Wire Notes Line
+	3000 7250 700  7250
+Wire Notes Line
+	700  7250 700  550 
 $EndSCHEMATC
