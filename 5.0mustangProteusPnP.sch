@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L FORD60PIN:FORD60PIN U1
-U 1 1 5FF3D359
-P 1800 3500
-F 0 "U1" H 2630 3050 50  0000 L CNN
-F 1 "FORD60PIN" H 1800 3500 50  0001 L BNN
-F 2 "FORD60PIN:FORD60PIN" H 1800 3500 50  0001 L BNN
-F 3 "" H 1800 3500 50  0001 L BNN
-	1    1800 3500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1800 1100 1450 1100
 Wire Wire Line
@@ -80,8 +69,6 @@ Wire Wire Line
 	1800 3900 1450 3900
 Wire Wire Line
 	1800 4000 1450 4000
-Wire Wire Line
-	1800 4100 1450 4100
 Wire Wire Line
 	1800 4200 1450 4200
 Wire Wire Line
@@ -418,9 +405,9 @@ GND
 Text Label 7250 1700 0    50   ~ 0
 GND
 Text Label 7250 2000 0    50   ~ 0
-12V_MR
+MR_INPUT
 Text Label 7250 2100 0    50   ~ 0
-12V_MR
+MR_INPUT
 Text Label 7250 2200 0    50   ~ 0
 AV1
 Text Label 7250 2300 0    50   ~ 0
@@ -538,7 +525,7 @@ DIGITAL_4
 Text Label 1500 2900 0    50   ~ 0
 GND
 Text Label 1500 3000 0    50   ~ 0
-HS1
+LS14
 Text Label 1500 3100 0    50   ~ 0
 LS7
 Text Label 1500 3200 0    50   ~ 0
@@ -559,8 +546,6 @@ Text Label 1500 3900 0    50   ~ 0
 DIGITAL_3
 Text Label 1500 4000 0    50   ~ 0
 LS11
-Text Label 1500 4100 0    50   ~ 0
-LS14
 Text Label 1500 4200 0    50   ~ 0
 LS12
 Text Label 1500 4300 0    50   ~ 0
@@ -1005,5 +990,45 @@ Wire Notes Line
 	3000 7250 700  7250
 Wire Notes Line
 	700  7250 700  550 
-NoConn ~ 1800 1000
+Wire Wire Line
+	8650 5300 8250 5300
+Wire Wire Line
+	8650 5400 8250 5400
+Wire Wire Line
+	8650 5500 8250 5500
+Text Label 8300 5400 0    50   ~ 0
+MR_INPUT
+Text Label 8300 5300 0    50   ~ 0
+12V
+Text Label 8300 5500 0    50   ~ 0
+12V_MR
+$Comp
+L FORD60PIN:FORD60PIN U1
+U 1 1 5FF3D359
+P 1800 3500
+F 0 "U1" H 2630 3050 50  0000 L CNN
+F 1 "FORD60PIN" H 1800 3500 50  0001 L BNN
+F 2 "FORD60PIN:FORD60PIN" H 1800 3500 50  0001 L BNN
+F 3 "" H 1800 3500 50  0001 L BNN
+	1    1800 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1000 1450 1000
+Text Label 1500 1000 0    50   ~ 0
+12V
+Text Notes 8500 4950 0    50   ~ 0
+Main Relay Connector
+NoConn ~ 1800 4100
+$Comp
+L 5-146280-3:5-146280-3 J?
+U 1 1 5FFFBBB6
+P 8650 5300
+F 0 "J?" H 9178 5253 60  0000 L CNN
+F 1 "5-146280-3" H 9178 5147 60  0000 L CNN
+F 2 "CONN_5-146280-3_TYCO" H 9050 5140 60  0001 C CNN
+F 3 "" H 8650 5300 60  0000 C CNN
+	1    8650 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
