@@ -70,8 +70,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 4000 1450 4000
 Wire Wire Line
-	1800 4200 1450 4200
-Wire Wire Line
 	1800 4300 1450 4300
 Wire Wire Line
 	1800 4400 1450 4400
@@ -517,7 +515,7 @@ LS4
 Text Label 1500 2500 0    50   ~ 0
 GND
 Text Label 1500 2600 0    50   ~ 0
-HS2
+LS12
 Text Label 1500 2700 0    50   ~ 0
 LS1
 Text Label 1500 2800 0    50   ~ 0
@@ -546,8 +544,6 @@ Text Label 1500 3900 0    50   ~ 0
 DIGITAL_3
 Text Label 1500 4000 0    50   ~ 0
 LS11
-Text Label 1500 4200 0    50   ~ 0
-LS12
 Text Label 1500 4300 0    50   ~ 0
 IGN3
 Text Label 1500 4400 0    50   ~ 0
@@ -937,10 +933,8 @@ Text Label 6100 6200 0    50   ~ 0
 CAN2-
 Text Label 6100 6400 0    50   ~ 0
 ETB1-
-NoConn ~ 4200 4900
 NoConn ~ 4200 5100
 NoConn ~ 4200 5300
-NoConn ~ 6350 5500
 NoConn ~ 6350 5700
 NoConn ~ 6350 5900
 NoConn ~ 6350 6100
@@ -1021,14 +1015,23 @@ Text Notes 8500 4950 0    50   ~ 0
 Main Relay Connector
 NoConn ~ 1800 4100
 $Comp
-L 5-146280-3:5-146280-3 J?
+L 5-146280-3:5-146280-3 J1
 U 1 1 5FFFBBB6
 P 8650 5300
-F 0 "J?" H 9178 5253 60  0000 L CNN
+F 0 "J1" H 9178 5253 60  0000 L CNN
 F 1 "5-146280-3" H 9178 5147 60  0000 L CNN
-F 2 "CONN_5-146280-3_TYCO" H 9050 5140 60  0001 C CNN
+F 2 "5-146280-3:5-146280-3" H 9050 5140 60  0001 C CNN
 F 3 "" H 8650 5300 60  0000 C CNN
 	1    8650 5300
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4200 4900 3900 4900
+Text Label 3950 4900 0    50   ~ 0
+HS1
+NoConn ~ 1800 4200
+Wire Wire Line
+	6350 5500 6050 5500
+Text Label 6100 5500 0    50   ~ 0
+HS2
 $EndSCHEMATC
